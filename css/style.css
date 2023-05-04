@@ -1,0 +1,218 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-style: 100%;
+  line-height: 1;
+  font-style: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-style: inherit;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Impact";
+  weight: 400;
+  src: url("/fonts/Impact.woff2");
+}
+a {
+  color: inherit;
+}
+
+body {
+  color: black;
+  font-family: "Roboto Condensed";
+  font-weight: 400;
+}
+
+.header {
+  background: -webkit-gradient(linear, left top, left bottom, from(#D8D4CA), to(rgba(217, 217, 217, 0)));
+  background: linear-gradient(180deg, #D8D4CA 0%, rgba(217, 217, 217, 0) 100%);
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  padding-top: 25px;
+}
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container {
+  max-width: 1226px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.menu__left, .menu__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 40px;
+  padding-top: 25px;
+}
+.menu__option {
+  color: #363636;
+  font-size: 15.5307px;
+  line-height: 1.16;
+}
+.menu__option a {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.menu__option a:hover {
+  text-decoration: underline;
+  color: black;
+}
+.menu__logo img {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.menu__logo img:hover {
+  -webkit-filter: drop-shadow(0px 0px 5px #ffffff);
+          filter: drop-shadow(0px 0px 5px #ffffff);
+}
+.menu__right {
+  padding-right: 80px;
+}
+
+.landing {
+  position: relative;
+  background: url("/img/bg.jpg") no-repeat center/cover;
+  min-height: 800px;
+}
+.landing__content {
+  padding: 100px;
+  text-align: center;
+  font-family: "Impact";
+  line-height: 1.22;
+  color: #040404;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+.landing__title {
+  font-size: 76px;
+  letter-spacing: 0.03em;
+}
+.landing__subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  border-bottom: black 1px solid;
+}
+.landing__subtitle span {
+  line-height: 1;
+  font-size: 34px;
+  color: #9F6B08;
+}
+.landing__text {
+  font-family: "Roboto Condensed";
+  font-size: 15.53px;
+  line-height: 1.17;
+  color: #363636;
+}
+.landing__button {
+  position: absolute;
+  bottom: 30px;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  display: inline-block;
+}
+.landing__button img {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.landing__button img:hover {
+  -webkit-filter: drop-shadow(0px 0px 5px #040404);
+          filter: drop-shadow(0px 0px 5px #040404);
+}
