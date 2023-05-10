@@ -1,11 +1,27 @@
+const menuBut = document.querySelector(".menu__burger");
+const menu = document.querySelector(".menu__list");
+const body = document.querySelector("body");
+
+menuBut.addEventListener("click", () => {
+    menu.classList.toggle("menu__list-open");
+    body.classList.toggle("body__menu-open");
+})
+
 const swiper = new Swiper('.swiper', {
     loop: true,
-    slidesPerView: 2,
-    spaceBetween: 20,
     navigation: {
         nextEl: '.swiper-button-left',
         prevEl: '.swiper-button-right',
     },
+    breakpoints: {
+        0: {
+            slidesPerView: 1
+        },
+        700: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        }
+    }
 });
 
 let map;
