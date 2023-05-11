@@ -1,8 +1,23 @@
 const menuBut = document.querySelector(".menu__burger");
 const menu = document.querySelector(".menu__list");
 const body = document.querySelector("body");
+const scrollBut = document.querySelector(".landing__button");
+const firstT = document.querySelector(".introblocks__block-1 .introblock__title");
+
+scrollBut.addEventListener("click", () => {
+    window.scrollTo({
+        top: firstT.offsetTop - 30,
+        left: 0,
+        behavior: "smooth"
+    });
+})
 
 menuBut.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+    });
     menu.classList.toggle("menu__list-open");
     body.classList.toggle("body__menu-open");
 })
