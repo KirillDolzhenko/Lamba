@@ -572,7 +572,7 @@ body {
 .evo-white__container::before {
   content: "";
   position: absolute;
-  background: url("/img/pol3.png") no-repeat center/contain;
+  background: url("img/pol3.png") no-repeat center/contain;
   width: 257px;
   height: 246px;
   left: 380px;
