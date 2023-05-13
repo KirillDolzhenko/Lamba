@@ -26,8 +26,8 @@ menuBut.addEventListener("click", () => {
 const swiper = new Swiper('.swiper', {
     loop: true,
     navigation: {
-        nextEl: '.swiper-button-left',
-        prevEl: '.swiper-button-right',
+        nextEl: '.swiper-button-right',
+        prevEl: '.swiper-button-left',
     },
     breakpoints: {
         0: {
