@@ -4,7 +4,8 @@ const body = document.querySelector("body");
 const scrollBut = document.querySelector(".landing__button");
 const firstT = document.querySelector(".introblocks__block-1 .introblock__title");
 
-scrollBut.addEventListener("click", () => {
+scrollBut.addEventListener("click", (e) => {
+    e.preventDefault();
     window.scrollTo({
         top: firstT.offsetTop - 30,
         left: 0,
@@ -25,8 +26,8 @@ menuBut.addEventListener("click", () => {
 const swiper = new Swiper('.swiper', {
     loop: true,
     navigation: {
-        nextEl: '.swiper-button-left',
-        prevEl: '.swiper-button-right',
+        nextEl: '.swiper-button-right',
+        prevEl: '.swiper-button-left',
     },
     breakpoints: {
         0: {
